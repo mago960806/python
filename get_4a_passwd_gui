@@ -1,0 +1,8 @@
+from tkinter import *
+master = Tk()
+master.title("4A主账号密码获取")
+Label(master, text="请输入4A账号：").grid(row=0, sticky = W)
+password=variable()
+e1 = Entry(master,textvariable=password)
+e1.grid(row=0, column=1)
+mainloop()

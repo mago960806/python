@@ -1,0 +1,7 @@
+import xlrd
+fname = "D:\\Users\\神船大法\\Desktop\\新建文件夹\\抚州分公司.xls"
+bk = xlrd.open_workbook(fname)
+shxrange=range(bk.nsheets)
+sh = bk.sheet_by_name("未录入资产列表")
+nrows = sh.nrows
+print(nrows)
